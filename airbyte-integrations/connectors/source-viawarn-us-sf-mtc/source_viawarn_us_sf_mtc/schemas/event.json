@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+    "url": { "type": [ "null", "string"] },
+    "jurisdiction_url": { "type": [ "null", "string"] },
+    "id": { "type": [ "null", "string"] },
+    "status": { "type": [ "null", "string"] },
+    "headline": { "type": [ "null", "string"] },
+    "event_type": { "type": [ "null", "array", "string"] },
+    "event_subtypes": {
+    "type": "array",
+    "items": { 
+    "type": [ "null", "string"] }
+    },
+    "severity": { "type": [ "null", "string"] },
+    "created": { "type": [ "null", "string"] },
+    "updated": { "type": [ "null", "string"] },
+    "areas": {
+    "type": "array",
+    "items": {
+    "type": "object",
+    "properties": {
+    "name": { "type": [ "null", "string"] },
+    "id": { "type": ["null","number"] },
+    "url": { "type": ["null","string" ] }
+    }
+    }
+    },
+    "geography": {
+    "type": "object",
+    "properties": {
+    "type": { "type": [ "null", "string"] },
+    "crs": {
+    "type": "object",
+    "properties": {
+    "type": { "type": [ "null", "string"] },
+    "properties": {
+    "type": "object",
+    "properties": {
+    "name": { "type": [ "null", "string"] }
+    }
+    }
+    }
+    },
+    "coordinates": {
+    "type": "array",
+    "items": { "type": ["null","number"] }
+    }
+    }
+    },
+    "+source_type": { "type": [ "null", "string", "number"] },
+    "+source_id": { "type": [ "null", "string"] },
+    "roads": {
+    "type": "array",
+    "properties": {
+    "name": { "type": [ "null", "string"] },
+    "from": { "type": [ "null", "string"] },
+    "direction": { "type": [ "null", "string"] },
+    "state": { "type": [ "null", "string"] },
+    "+lane_type": { "type": [ "null", "string"] },
+    "+lane_status": { "type": [ "null", "string"] },
+    "+road_advisory": { "type": [ "null", "string"] },
+    "+article": { "type": [ "null", "string"] }
+    }
+    },
+    "schedule": {
+    "type": "object",
+    "properties": {
+    "intervals": {
+    "type": "array",
+    "items": { "type": [ "null", "string"] }
+    }
+    }
+    },
+    "vwid": { "type": [ "null", "string"] },
+    "ewkt": { "type": [ "null", "string"] }
+    }
+    }
+    
