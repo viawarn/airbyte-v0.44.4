@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "Id": { "type": ["null", "string"] },
+        "Name": { "type": ["null", "string"] },
+        "Roadway": { "type": ["null", "string"] },
+        "DirectionOfTravel": { "type": ["null", "string"] },
+        "Messages": { "type": ["null", "array", "string"] },
+        "Latitude": { "type": ["null", "number"] },
+        "Longitude": { "type": ["null", "number"] },
+        "LastUpdated": { "type": ["null", "integer"] },
+        "vwid": { "type": ["null", "string"] },
+        "ewkt": { "type": ["null", "string"] }
+    }
+}
