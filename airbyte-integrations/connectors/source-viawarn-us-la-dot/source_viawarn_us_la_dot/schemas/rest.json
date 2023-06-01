@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "Name": { "type": ["null", "string"] },
+        "Location": { "type": ["null", "string"] },
+        "Direction": { "type": ["null", "string"] },
+        "Latitude": { "type": ["null", "number"] },
+        "Longitude": { "type": ["null", "number"] },
+        "TruckParking": { "type": ["null", "string"] },
+        "AllParking": { "type": ["null", "string"] },
+        "Security": { "type": ["null", "string"] },
+        "FreeWiFi": { "type": ["null", "string"] },
+        "Restrooms": { "type": ["null", "string"] },
+        "VendingMachines": { "type": ["null", "string"] },
+        "PicnicTable": { "type": ["null", "string"] },
+        "RvDumpStation": { "type": ["null", "string"] },
+        "vwid": { "type": ["null", "string"] },
+        "ewkt": { "type": ["null", "string"] }
+    }
+}

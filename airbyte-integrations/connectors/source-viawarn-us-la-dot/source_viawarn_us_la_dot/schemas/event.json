@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "ID": { "type": ["null", "string"] },
+    "Organization": { "type": ["null", "string"] },
+    "RoadwayName": { "type": ["null", "string"] },
+    "DirectionOfTravel": { "type": ["null", "string"] },
+    "Description": { "type": ["null", "string"] },
+    "Reported": { "type": ["null", "integer"] },
+    "LastUpdated": { "type": ["null", "integer"] },
+    "StartDate": { "type": ["null", "integer"] },
+    "PlannedEndDate": { "type": ["null", "integer"] },
+    "LanesAffected": { "type": ["null", "string"] },
+    "Latitude": { "type": ["null", "number"] },
+    "Longitude": { "type": ["null", "number"] },
+    "LatitudeSecondary": { "type": ["null", "number"] },
+    "LongitudeSecondary": { "type": ["null", "number"] },
+    "EventType": { "type": ["null", "string"] },
+    "IsFullClosure": { "type": ["null", "boolean"] },
+    "Restrictions": { 
+      "type": "object",   
+      "properties": {
+          "Width": { "type": ["null", "number"] },
+          "Height": { "type": ["null", "number"] },
+          "Length": { "type": ["null", "number"] },
+          "Weight": { "type": ["null", "number"] },
+          "Speed": { "type": ["null", "number"] }
+      }
+    },    
+    "DetourPolyline": { "type": ["null", "string"] },
+    "DetourInstructions": { "type": ["null", "array", "string"] },
+    "Recurrence": { "type": ["null", "string"] },
+    "RecurrenceSchedules": { "type": ["null", "array", "string"] },
+    "EventSubType": { "type": ["null", "string"] },
+    "Details": { "type": ["null", "string"] },
+    "vwid": { "type": ["null", "string"] },
+    "ewkt": { "type": ["null", "string"] }
+  }
+}
