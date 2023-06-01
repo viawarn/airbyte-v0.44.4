@@ -1,0 +1,12 @@
+documentationUrl: https://511.alaska.gov/developers/doc
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: USA AK DOT - Spec
+  type: object
+  required:
+    - developer_api_key
+  properties:
+    developer_api_key:
+      type: string
+      airbyte_secret: true
+      description: Developer API Key obtained from https://511.alaska.gov/developers/doc

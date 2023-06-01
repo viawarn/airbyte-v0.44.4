@@ -1,11 +1,11 @@
 # See [Connector Acceptance Tests](https://docs.airbyte.com/connector-development/testing-connectors/connector-acceptance-tests-reference)
 # for more information about how to configure these tests
-connector_image: airbyte/source-viawarn-us-sf-mtc:dev
+connector_image: airbyte/source-viawarn-us-ak-dot:dev
 test_strictness_level: high
 acceptance_tests:
   spec:
     tests:
-      - spec_path: "source_viawarn_us_sf_mtc/spec.yaml"
+      - spec_path: "source_viawarn_us_ak_dot/spec.yaml"
   connection:
     tests:
       - config_path: "secrets/config.json"
@@ -19,7 +19,7 @@ acceptance_tests:
     tests:
       - config_path: "secrets/config.json"
         expect_records:
-          bypass_reason: "Our records change over time, then, the expected_records wont match the retrived 'actual_records' by the test test_core.py"
+          bypass_reason: "Our records change over time, then, the expected_records wont match the 	retrived 'actual_records' by the test test_core.py"
   incremental: 
     bypass_reason: "This connector does not implement incremental sync"
   full_refresh:

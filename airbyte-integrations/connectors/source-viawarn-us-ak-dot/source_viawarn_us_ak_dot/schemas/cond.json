@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+      "Id": { "type": ["null", "integer"] },
+      "LocationDescription": { "type": ["null", "string"] },
+      "Overall Status": { "type": ["null", "string"] },
+      "Surface Conditions": { 
+          "type": ["null", "array"],
+          "items": {
+              "type": "string"
+          }
+      },
+      "Atmospheric Conditions": { 
+          "type": ["null", "array"],
+          "items": {
+              "type": "string"
+          }
+      },
+      "Warnings": { 
+          "type": ["null", "array"],
+          "items": {
+              "type": "string"
+          }
+      },
+      "Snow (inches) Min": { "type": ["null", "string"] },
+      "Temperature (F) Min": { "type": ["null", "string"] },
+      "Wind Type": { "type": ["null", "string"] },
+      "Wind Direction": { "type": ["null", "string"] },
+      "Wind Speed (MPH) Min": { "type": ["null", "string"] },
+      "Snow (inches) Max": { "type": ["null", "string"] },
+      "Temperature (F) Max": { "type": ["null", "string"] },
+      "Wind Speed (MPH) Max": { "type": ["null", "string"] },
+      "AreaName": { "type": ["null", "string"] },
+      "RoadwayName": { "type": ["null", "string"] },
+      "EncodedPolyline": { "type": ["null", "string"] },
+      "LastUpdated": { "type": ["null", "integer"] },
+      "Comments": { "type": ["null", "string"] },
+      "vwid": { "type": ["null", "string"] }
+  }
+}
