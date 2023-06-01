@@ -5,12 +5,14 @@
 from unittest.mock import MagicMock
 
 from source_viawarn_us_az_dot.source import SourceViawarnUsAzDot
-
+import json
 
 def test_check_connection(mocker):
     source = SourceViawarnUsAzDot()
-    logger_mock, config_mock = MagicMock(), MagicMock()
-    assert source.check_connection(logger_mock, config_mock) == (True, None)
+    logger_mock = MagicMock()
+    with open("secrets/config.json", "r") as f:
+        config=json.load(f)
+    assert source.check_connection(logger_mock, config) == (True, None)
 
 
 def test_streams(mocker):
