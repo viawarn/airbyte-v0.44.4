@@ -2,11 +2,11 @@
 # Copyright (c) 2023 Airbyte, Inc., all rights reserved.
 #
 
+import json
 from unittest.mock import MagicMock
 
 from source_viawarn_us_ak_dot.source import SourceViawarnUsAkDot
 
-import json
 
 def test_check_connection(mocker):
     source = SourceViawarnUsAkDot()
@@ -23,4 +23,3 @@ def test_streams(mocker):
     # TODO: replace this with your streams number
     expected_streams_number = 3
     assert len(streams) == expected_streams_number
-

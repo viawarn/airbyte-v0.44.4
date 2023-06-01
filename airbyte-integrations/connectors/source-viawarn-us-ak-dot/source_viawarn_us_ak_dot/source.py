@@ -15,8 +15,7 @@ from airbyte_cdk.sources.streams.http import HttpStream
 
 # Basic full refresh stream
 class ViawarnUsAkDotStream(HttpStream, ABC):
-    
-    
+
     url_base = "https://511.alaska.gov/api/v2/get/"
 
     def __init__(self, config: Mapping[str, Any], **kwargs):
@@ -33,6 +32,7 @@ class ViawarnUsAkDotStream(HttpStream, ABC):
 
     def parse_response(self, response: requests.Response, **kwargs) -> Iterable[Mapping]:
         yield {}
+
 
 class Event(ViawarnUsAkDotStream):
     primary_key = "vwid"
@@ -83,6 +83,7 @@ class Event(ViawarnUsAkDotStream):
             records = []
         yield from records
 
+
 class Sign(ViawarnUsAkDotStream):
     primary_key = "vwid"
 
@@ -120,6 +121,7 @@ class Sign(ViawarnUsAkDotStream):
         if not records:
             records = []
         yield from records
+
 
 class Cond(ViawarnUsAkDotStream):
 
@@ -174,4 +176,3 @@ class SourceViawarnUsAkDot(AbstractSource):
 
     def streams(self, config: Mapping[str, Any]) -> List[Stream]:
         return [Event(config=config), Sign(config=config), Cond(config=config)]
-    
