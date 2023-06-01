@@ -13,7 +13,6 @@ with open("secrets/config.json", "r") as f:
     config = json.load(f)
 
 
-
 @pytest.fixture
 def patch_base_class(mocker):
     mocker.patch.object(ViawarnUsAzDotStream, "__abstractmethods__", set())
