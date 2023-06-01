@@ -1,0 +1,20 @@
+data:
+  allowedHosts:
+    hosts:
+      - TODO # Please change to the hostname of the source.
+  registries:
+    oss:
+      enabled: false
+  connectorSubtype: api
+  connectorType: source
+  definitionId: 89bba81d-73d1-4c5a-9059-636b89e72a77
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/source-viawarn-us-sf-mtc
+  githubIssueLabel: source-viawarn-us-sf-mtc
+  icon: viawarn-us-sf-mtc.svg
+  license: MIT
+  name: Viawarn Us Sf Mtc
+  releaseDate: TODO
+  releaseStage: alpha
+  supportUrl: https://docs.airbyte.com/integrations/sources/viawarn-us-sf-mtc
+metadataSpecVersion: "1.0"
