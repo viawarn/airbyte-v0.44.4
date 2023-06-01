@@ -1,0 +1,20 @@
+data:
+  allowedHosts:
+    hosts:
+      - TODO # Please change to the hostname of the source.
+  registries:
+    oss:
+      enabled: false
+  connectorSubtype: api
+  connectorType: source
+  definitionId: 676fd2b4-37ab-424d-b91a-2d84e323e23c
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/source-viawarn-us-az-dot
+  githubIssueLabel: source-viawarn-us-az-dot
+  icon: viawarn-us-az-dot.svg
+  license: MIT
+  name: Viawarn Us Az Dot
+  releaseDate: TODO
+  releaseStage: alpha
+  supportUrl: https://docs.airbyte.com/integrations/sources/viawarn-us-az-dot
+metadataSpecVersion: "1.0"
